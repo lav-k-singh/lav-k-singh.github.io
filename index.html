@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <!-- MathJax for LaTeX support -->
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]'], ['$$', '$$']]
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <title>Lav Kumar Singh</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="container">
-
-    <!-- LEFT MENU -->
+    <!-- LEFT MENU / SIDEBAR -->
     <div class="sidebar">
         <img src="images/ppic.JPG" alt="Profile Picture" class="profile-pic">
-
         <h2>Lav Kumar Singh</h2>
         <p class="subtitle">Mathematics</p>
 
-        <ul class="menu">
+        <!-- Main navigation menu -->
+        <ul class="menu main-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="cv/cv.pdf">CV</a></li>
             <li><a href="publications/publications.html">Publications</a></li>
@@ -35,57 +32,62 @@ window.MathJax = {
             <li><a href="teaching/teaching.html">Teaching</a></li>
             <li><a href="pictures/pictures.html">Pictures</a></li>
         </ul>
+
+        <!-- Profile icons – placed BELOW the main menu items -->
+        <div class="sidebar-profiles">
+            <p class="profiles-title">Academic Profiles</p>
+            <div class="profile-icons">
+                <a href="https://www.researchgate.net/profile/Lav-Kumar-Singh"
+                   target="_blank" title="ResearchGate">
+                    <img src="images/ResearchGate_icon_SVG.svg"
+                         alt="ResearchGate" height="28">
+                </a>
+                <a href="https://arxiv.org/a/kumar_l_2.html"
+                   target="_blank" title="arXiv">
+                    <img src="images/arxiv-logo.svg"
+                         alt="arXiv" height="26">
+                </a>
+                <a href="https://orcid.org/0000-0001-9748-1493"
+                   target="_blank" title="ORCID">
+                    <img src="images/ORCID_iD.svg"
+                         alt="ORCID" height="28">
+                </a>
+                <a href="https://scholar.google.com/citations?user=mLn1qgcAAAAJ&hl=en"
+                   target="_blank" title="Google Scholar">
+                    <img src="images/Google_Scholar_logo.svg"
+                         alt="Google Scholar" height="28">
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- MAIN CONTENT -->
     <div class="content">
         <h1>Welcome to my personal webpage</h1>
 
-      <p>
-        I am a mathematician working in functional analysis and operator theory. 
-        I did my PhD from the 
-        <a href="https://www.jnu.ac.in/sps" target="_blank">School of Physical Sciences, Jawaharlal Nehru University</a>, New Delhi. 
-        Currently I am serving as a postdoctoral researcher at the 
-        <a href="http://www.imfm.si" target="_blank">Institute of Mathematics, Physics and Mechanics</a>, Ljubljana (Slovenia). 
-        In the past I have also served as postdoctoral fellow at 
-        <a href="https://www.iiserb.ac.in/" target="_blank">IISER-Bhopal</a> and 
-        <a href="https://iitgn.ac.in/" target="_blank">IIT-Gandhinagar</a>.
-    </p>
-    <p>
-        I am primarily interested in Banach/Topological and Operator algebras. 
-        I study classification properties like Arens regularity and Amenability of Banach algebras. 
-        Some of the objects that I study are \(C^*\)-algebras, locally \(C^*\)-algebras, Groups and Fourier algebras of a locally compact group and their biduals. 
-        To study these objects in the context of Arens regularity/Amenability, I often deal with the various tensor products (like projective, injective, operator space tensor products etc.) of these algebras, tools from geometry of Banach spaces (like RNP, WSC etc) and techniques of topological vector spaces (like projective/injective limits, various dual topologies and theory of locally convex vector spaces).
-    </p>
-<p class="profile-links">
-    <a href="https://www.researchgate.net/profile/Lav-Kumar-Singh"
-       target="_blank" title="ResearchGate">
-        <img src="images/ResearchGate_icon_SVG.svg"
-     alt="ResearchGate" height="28">
-    </a>      
-    
-    <a href="https://arxiv.org/a/kumar_l_2.html"
-       target="_blank" title="arXiv">
-       <img src="images/arxiv-logo.svg"
-     alt="arXiv" height="26">
-</a>
-    <a href="https://orcid.org/0000-0001-9748-1493" target="_blank" title="ORCID">
-        <img src="images/ORCID_iD.svg" alt="ORCID" height="28">
-    </a>
-    <a href="https://scholar.google.com/citations?user=mLn1qgcAAAAJ&hl=en" target="_blank" title="Google Scholar">
-        <img src="images/Google_Scholar_logo.svg" alt="Google Scholar" height="28">
-    </a>
-</p>
+        <p>
+            I am a mathematician working in functional analysis and operator theory.
+            I did my PhD from the
+            <a href="https://www.jnu.ac.in/sps" target="_blank">School of Physical Sciences, Jawaharlal Nehru University</a>, New Delhi.
+            Currently I am serving as a postdoctoral researcher at the
+            <a href="http://www.imfm.si" target="_blank">Institute of Mathematics, Physics and Mechanics</a>, Ljubljana (Slovenia).
+            In the past I have also served as postdoctoral fellow at
+            <a href="https://www.iiserb.ac.in/" target="_blank">IISER-Bhopal</a> and
+            <a href="https://iitgn.ac.in/" target="_blank">IIT-Gandhinagar</a>.
+        </p>
 
+        <p>
+            I am primarily interested in Banach/Topological and Operator algebras.
+            I study classification properties like Arens regularity and Amenability of Banach algebras.
+            Some of the objects that I study are \(C^*\)-algebras, locally \(C^*\)-algebras, Groups and Fourier algebras of a locally compact group and their biduals.
+            To study these objects in the context of Arens regularity/Amenability, I often deal with the various tensor products (like projective, injective, operator space tensor products etc.) of these algebras, tools from geometry of Banach spaces (like RNP, WSC etc) and techniques of topological vector spaces (like projective/injective limits, various dual topologies and theory of locally convex vector spaces).
+        </p>
 
         <hr>
-
         <p class="small">
             Last updated: 2026
         </p>
     </div>
-
 </div>
-
 </body>
 </html>
