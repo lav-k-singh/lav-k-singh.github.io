@@ -167,3 +167,33 @@ body {
     display: block;
     margin: 0 auto;
 }
+/* Gallery styling for pictures page */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.gallery-item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-item figcaption {
+    padding: 1em;
+    font-size: 0.95em;
+    color: #555;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
