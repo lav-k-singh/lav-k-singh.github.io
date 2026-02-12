@@ -1,240 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<style>
 
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)'], ['$', '$']],
-                displayMath: [['\\[', '\\]'], ['$$', '$$']]
-            }
-        };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+/* Keep your existing layout intact */
+body {
+    margin: 0;
+}
 
-    <title>Publications - Lav Kumar Singh</title>
+/* Improve only main content area */
+.content {
+    padding: 60px 80px;
+    max-width: 900px;
+}
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+.content h1 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #f5f7fa;
-            color: #2c3e50;
-        }
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
 
-        .container {
-            display: flex;
-            min-height: 100vh;
-        }
+/* Publications list styling */
+ol {
+    padding-left: 22px;
+    margin-top: 30px;
+}
 
-        /* Sidebar */
-        .sidebar {
-            width: 260px;
-            background: #1f2937;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 3px 0 15px rgba(0,0,0,0.1);
-        }
+ol li {
+    margin-bottom: 30px;
+    line-height: 1.75;
+    font-size: 15.5px;
+    padding-left: 6px;
+}
 
-        .profile-pic {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #3b82f6;
-            margin-bottom: 15px;
-        }
+/* Journal names */
+em {
+    font-style: italic;
+    font-weight: 500;
+}
 
-        .sidebar h2 {
-            margin: 10px 0 5px 0;
-            font-weight: 600;
-        }
+/* Links cleaner */
+a {
+    text-decoration: none;
+    transition: 0.2s ease;
+}
 
-        .affiliation {
-            font-size: 14px;
-            color: #d1d5db;
-            margin-bottom: 25px;
-        }
+a:hover {
+    text-decoration: underline;
+}
 
-        .menu {
-            list-style: none;
-            padding: 0;
-        }
+/* Last updated text */
+.small {
+    font-size: 13px;
+    margin-top: 60px;
+    opacity: 0.7;
+}
 
-        .menu li {
-            margin: 12px 0;
-        }
+/* Improve readability on smaller screens */
+@media (max-width: 900px) {
+    .content {
+        padding: 40px 25px;
+    }
+}
 
-        .menu a {
-            color: #e5e7eb;
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s ease;
-        }
-
-        .menu a:hover {
-            color: #3b82f6;
-        }
-
-        /* Main Content */
-        .content {
-            flex: 1;
-            padding: 60px 80px;
-            background: white;
-        }
-
-        .content h1 {
-            font-weight: 600;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #3b82f6;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .content p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        ol {
-            padding-left: 22px;
-            margin-top: 30px;
-        }
-
-        ol li {
-            margin-bottom: 28px;
-            line-height: 1.7;
-            font-size: 15px;
-        }
-
-        em {
-            font-style: italic;
-        }
-
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            word-break: break-all;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .small {
-            font-size: 13px;
-            color: #6b7280;
-            margin-top: 50px;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                box-shadow: none;
-            }
-
-            .content {
-                padding: 40px 25px;
-            }
-        }
-    </style>
-
-</head>
-<body>
-
-<div class="container">
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <img src="../images/ppic.JPG" alt="Profile Picture" class="profile-pic">
-        <h2>Lav Kumar Singh</h2>
-        <p class="affiliation">
-            Postdoctoral Researcher at 
-            IMFM, Ljubljana, Slovenia.
-        </p>
-
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../cv/cv.pdf">CV</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="../notes/notes.html">Notes</a></li>
-            <li><a href="../teaching/teaching.html">Teaching</a></li>
-            <li><a href="../pictures/pictures.html">Pictures</a></li>
-        </ul>
-    </div>
-
-    <!-- Main Content -->
-    <div class="content">
-        <h1>Publications</h1>
-        <p>Here is a list of my publications (chronological order):</p>
-
-        <ol>
-
-            <li>
-                Lav Kumar Singh, A.K. Verma. 
-                “Some functorial properties of Schatten classes”. 
-                <em>Advances in Operator Theory</em> 5, 1406–1413 (2020). 
-                <a href="https://doi.org/10.1007/s43036-020-00049-7" target="_blank">https://doi.org/10.1007/s43036-020-00049-7</a>.
-            </li>
-
-            <li>
-                Lav Kumar Singh. 
-                “On Arens regularity of projective tensor product of Schatten spaces”. 
-                <em>Rocky Mountain Journal of Mathematics</em> 51(4), 1433–1441 (August 2021). 
-                <a href="https://doi.org/10.1216/rmj.2021.51.1433" target="_blank">https://doi.org/10.1216/rmj.2021.51.1433</a>.
-            </li>
-
-            <li>
-                Lav Kumar Singh, Ved Prakash Gupta. 
-                “On strong Arens irregularity of the projective tensor product of Hilbert-Schmidt spaces”. 
-                <em>Houston Journal of Mathematics</em>, Vol. 48(2), 337–351 (2022). 
-                <a href="https://www.math.uh.edu/~hjm/restricted/pdf48(2)/08singh.pdf" target="_blank">PDF</a>.
-            </li>
-
-            <li>
-                Lav Kumar Singh. 
-                “Geometry of Banach algebra A and the bidual of $L^1(G)\hat\otimes A$”. 
-                <em>Journal of Mathematical Analysis and Applications</em>, Volume 533, Issue 1, 128056 (2024). 
-                <a href="https://doi.org/10.1016/j.jmaa.2023.128056" target="_blank">https://doi.org/10.1016/j.jmaa.2023.128056</a>.
-            </li>
-
-            <li>
-                Lav Kumar Singh. 
-                “Annihilators in the Bidual of the Generalized Group Algebra of a Discrete Group”. 
-                <em>Complex Anal. Oper. Theory</em> 18, 68 (2024). 
-                <a href="https://doi.org/10.1007/s11785-024-01506-4" target="_blank">https://doi.org/10.1007/s11785-024-01506-4</a>.
-            </li>
-
-            <li>
-                Lav Kumar Singh, Aljoša Peperko. 
-                “On Fréchet spaces associated to the Young functions satisfying Mulholland inequality”. 
-                <em>Filomat</em> 40:4 (2026), 1541–1553. 
-                <a href="https://doi.org/10.2298/FIL2604541S" target="_blank">https://doi.org/10.2298/FIL2604541S</a>.
-            </li>
-
-            <li>
-                Lav Kumar Singh, Aljoša Peperko. 
-                “Sherman-Takeda type theorems for locally C*-algebras”. 
-                Communicated (available on 
-                <a href="https://arxiv.org/abs/2601.00717" target="_blank">arXiv:2601.00717</a>). 2026.
-            </li>
-
-        </ol>
-
-        <p class="small">Last updated: January 2026</p>
-    </div>
-
-</div>
-
-</body>
-</html>
+</style>
