@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <script>
         window.MathJax = {
             tex: {
@@ -11,19 +12,157 @@
         };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <title>Publications - Lav Kumar Singh</title>
-    <link rel="stylesheet" href="../style.css">  <!-- Adjust path if needed -->
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f7fa;
+            color: #2c3e50;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: #1f2937;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 3px 0 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3b82f6;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h2 {
+            margin: 10px 0 5px 0;
+            font-weight: 600;
+        }
+
+        .affiliation {
+            font-size: 14px;
+            color: #d1d5db;
+            margin-bottom: 25px;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 12px 0;
+        }
+
+        .menu a {
+            color: #e5e7eb;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #3b82f6;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            padding: 60px 80px;
+            background: white;
+        }
+
+        .content h1 {
+            font-weight: 600;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3b82f6;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ol {
+            padding-left: 22px;
+            margin-top: 30px;
+        }
+
+        ol li {
+            margin-bottom: 28px;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .small {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                box-shadow: none;
+            }
+
+            .content {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+
 </head>
 <body>
+
 <div class="container">
-    <!-- Sidebar (same as index.html) -->
+
+    <!-- Sidebar -->
     <div class="sidebar">
-        <img src="../images/ppic.JPG" alt="Profile Picture" class="profile-pic">  <!-- Adjust path -->
+        <img src="../images/ppic.JPG" alt="Profile Picture" class="profile-pic">
         <h2>Lav Kumar Singh</h2>
         <p class="affiliation">
             Postdoctoral Researcher at 
             IMFM, Ljubljana, Slovenia.
         </p>
+
         <ul class="menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../cv/cv.pdf">CV</a></li>
@@ -39,7 +178,7 @@
         <h1>Publications</h1>
         <p>Here is a list of my publications (chronological order):</p>
 
-        <ol>  <!-- Standard ordered list: oldest first -->
+        <ol>
 
             <li>
                 Lav Kumar Singh, A.K. Verma. 
@@ -79,19 +218,23 @@
             <li>
                 Lav Kumar Singh, Aljoša Peperko. 
                 “On Fréchet spaces associated to the Young functions satisfying Mulholland inequality”. 
-                <em>Filomat</em> 40:4 (2026), 1541–1553. <a href="https://doi.org/10.2298/FIL2604541S" target="_blank">https://doi.org/10.2298/FIL2604541S</a>.
+                <em>Filomat</em> 40:4 (2026), 1541–1553. 
+                <a href="https://doi.org/10.2298/FIL2604541S" target="_blank">https://doi.org/10.2298/FIL2604541S</a>.
             </li>
 
             <li>
                 Lav Kumar Singh, Aljoša Peperko. 
                 “Sherman-Takeda type theorems for locally C*-algebras”. 
-                Communicated (available on <a href="https://arxiv.org/abs/2601.00717" target="_blank">arXiv:2601.00717</a>). 2026.
+                Communicated (available on 
+                <a href="https://arxiv.org/abs/2601.00717" target="_blank">arXiv:2601.00717</a>). 2026.
             </li>
 
         </ol>
 
         <p class="small">Last updated: January 2026</p>
     </div>
+
 </div>
+
 </body>
 </html>
