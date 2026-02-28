@@ -17,10 +17,9 @@ body {
 ───────────────────────────────────────────────── */
 .sidebar {
     width: 220px;
-    background-color: #4a3b2f; /* dark brown */
-    color: #f2f2f2;            /* light text default */
-    padding: 15px;
-    border-right: 3px solid #7a2e2e; /* reddish border */
+    background-color: #8B4513;  /* brown color */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .profile-pic {
