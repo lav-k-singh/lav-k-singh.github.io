@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- MathJax (optional here, but kept for consistency) -->
+    <!-- MathJax (optional) -->
     <script>
     window.MathJax = {
       tex: {
@@ -13,15 +13,53 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <title>Pictures - Lav Kumar Singh</title>
-    <link rel="stylesheet" href="../style.css">  <!-- Path up one level to root style.css -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Gallery Styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            text-align: center;
+            flex: 1 1 250px;  /* responsive sizing */
+        }
+
+        .gallery-item img.thumbnail {
+            width: 200px;     /* small size for clickable thumbnails */
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 5px;
+        }
+
+        .gallery-item img.thumbnail:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        .small {
+            font-size: 0.8em;
+            color: gray;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
-    <!-- Sidebar (consistent with index.html) -->
+    <!-- Sidebar -->
     <div class="sidebar">
         <img src="../images/ppic.JPG" alt="Profile Picture" class="profile-pic">
         <h2>Lav Kumar Singh</h2>
-       
 
         <ul class="menu">
             <li><a href="../index.html">Home</a></li>
@@ -29,11 +67,8 @@
             <li><a href="../publications/publications.html">Publications</a></li>
             <li><a href="../notes/notes.html">Notes</a></li>
             <li><a href="../teaching/teaching.html">Teaching</a></li>
-            <li><a href="pictures.html">Pictures</a></li>  <!-- Self link -->
+            <li><a href="pictures.html">Pictures</a></li>
         </ul>
-
-        <!-- Optional: Profile icons section if you added it earlier -->
-        <!-- Paste your .sidebar-profiles div here if desired -->
     </div>
 
     <!-- Main Content -->
@@ -43,17 +78,23 @@
 
         <div class="gallery">
             <figure class="gallery-item">
-                <img src="../images/IWOTA 2025 2 (1).jpeg" alt="Group photo at a mathematics conference in a large lecture hall">
+                <a href="../images/IWOTA 2025 2 (1).jpeg" target="_blank">
+                    <img src="../images/IWOTA 2025 2 (1).jpeg" alt="Group photo at a mathematics conference in a large lecture hall" class="thumbnail">
+                </a>
                 <figcaption>Group photo at an international conference/workshop IWOTA-2025, Enschede, Netherlands.</figcaption>
             </figure>
 
             <figure class="gallery-item">
-                <img src="../images/Conference-Group-Shot (1).jpg" alt="Another group photo at a mathematics conference">
+                <a href="../images/Conference-Group-Shot (1).jpg" target="_blank">
+                    <img src="../images/Conference-Group-Shot (1).jpg" alt="Another group photo at a mathematics conference" class="thumbnail">
+                </a>
                 <figcaption>Group photo from another conference event IWOTA 2024, Canterbury (U.K).</figcaption>
             </figure>
 
             <figure class="gallery-item">
-                <img src="../images/Stefan banach and Nikodym (1).jpeg" alt="Personal photo sitting on a bench statue with two bronze figures">
+                <a href="../images/Stefan banach and Nikodym (1).jpeg" target="_blank">
+                    <img src="../images/Stefan banach and Nikodym (1).jpeg" alt="Personal photo sitting on a bench statue with two bronze figures" class="thumbnail">
+                </a>
                 <figcaption>With the famous bench sculpture of Stephan Banach and Otto Nikodym at Krakow, Poland.</figcaption>
             </figure>
         </div>
