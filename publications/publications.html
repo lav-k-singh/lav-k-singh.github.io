@@ -177,7 +177,14 @@
                  </li>
         </ol>
 
-        <p class="small">Last updated: January 2026</p>
+      <p class="small">
+  Last updated: <span id="last-updated"></span>
+</p>
+
+<script>
+  document.getElementById("last-updated").textContent =
+    new Date(document.lastModified).toLocaleDateString();
+</script>
     </div>
 
 </div>
