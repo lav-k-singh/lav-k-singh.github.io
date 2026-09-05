@@ -1,28 +1,125 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="fIluEOfyFoBn-x78mEhVxXmjHJUA9CXciCUXSEPI6Vw" />
+
     <meta charset="UTF-8">
-    <title>Mathematics for Intelligent Systems</title>
-    <link rel="stylesheet" href="../../style.css">
+    <!-- MathJax for LaTeX support -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Lav Kumar Singh</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<div class="container">
+    <!-- LEFT MENU / SIDEBAR -->
+    <div class="sidebar">
+        <img src="images/ppic.JPG" alt="Profile Picture" class="profile-pic">
+        <h2>Lav Kumar Singh</h2>
+        <p class="affiliation">
+            Assistant Professor, Amrita Vishwa Vidyapeetham (Deemed to be University).
+        </p>
 
-<div class="content">
+        <ul class="menu main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv/cv.pdf">CV</a></li>
+            <li><a href="publications/publications.html">Publications</a></li>
+            <li><a href="notes/notes.html">Notes</a></li>
+            <li><a href="teaching/teaching.html">Teaching</a></li>
+            <li><a href="pictures/pictures.html">Pictures</a></li>
+        </ul>
 
-    <h1>Mathematics for Intelligent Systems</h1>
+        <div class="sidebar-profiles">
+            <p class="profiles-title">Academic Profiles</p>
+            <div class="profile-icons">
+                <a href="https://www.researchgate.net/profile/Lav-Kumar-Singh" target="_blank">
+                    <img src="images/ResearchGate_icon_SVG.svg" alt="ResearchGate" height="28">
+                </a>
+                <a href="https://arxiv.org/a/kumar_l_2.html" target="_blank">
+                    <img src="images/arxiv-logo.svg" alt="arXiv" height="26">
+                </a>
+                <a href="https://orcid.org/0000-0001-9748-1493" target="_blank">
+                    <img src="images/ORCID_iD.svg" alt="ORCID" height="28">
+                </a>
+                <a href="https://scholar.google.com/citations?user=mLn1qgcAAAAJ&hl=en" target="_blank">
+                    <img src="images/Google_Scholar_logo.svg" alt="Google Scholar" height="28">
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <h3>Lecture Notes</h3>
+    <!-- MAIN CONTENT -->
+    <div class="content">
+        <h1>Welcome to my personal webpage</h1>
 
-    <p>Lecture notes will be added here.</p>
+        <p>
+            I am a mathematician working in Functional Analysis and Operator Algebras.
+            I did my PhD from the
+            <a href="https://www.jnu.ac.in/sps" target="_blank">School of Physical Sciences, Jawaharlal Nehru University</a>, New Delhi.
+            In the past I have also served as postdoctoral fellow at
+            <a href="https://www.iiserb.ac.in/" target="_blank">IISER-Bhopal</a>, 
+            <a href="https://iitgn.ac.in/" target="_blank">IIT-Gandhinagar</a> and  <a href="http://www.imfm.si" target="_blank">Institute of Mathematics, Physics and Mechanics</a>, Ljubljana (Slovenia). Currently I am serving as an Assistant Professor at <a href="http://www.amrita.edu" target="_blank">Amrita Vishwa Vidyapeetham (Deemed to be University) </a>.
+        </p>
 
-    <p>
-        <a href="../teaching.html">← Back to Teaching</a>
-    </p>
+        <p>
+            I am primarily interested in Banach,Topological and Operator algebras. The following keywords identify my objects of interest.
+</p>
 
+<ul>
+    <li>\(C^*\)-algebras, Locally \(C^*\)-algebras.</li>
+    <li>Group algebras and Fourier algebras of a locally compact group.</li>
+    <li>Biduals of Banach algebras.</li>
+    <li> Arens regularity/ Topological centers of Bidual algebras.</li>
+        <li> Schatten $p$-class ideals.</li>
+    <li> Projective tensor products of Banach spaces/algebras. </li>
+        <li> Projective and inductive limits of topological algebras. </li>
+    <li>Geometric properties of Banach spaces (Radon Nikodym Property, Weak sequential completeness, Covering index) </li>
+</ul>
+
+
+        <address>
+            <strong>My Office</strong><br>
+            Room 103,<br>
+            Amrita Vishwavidyapeetham (Haridwar Campus),<br>
+            Noorpur Panjanhedi, Haridwar,<br>
+            Uttarakhand 249408.<br>
+            Email: <a href="mailto:lavksingh@hotmail.com">lavksingh@hotmail.com</a>
+        </address>
+
+        <p>
+            <a href="https://maps.app.goo.gl/6Lr9Xau6Fh7gXStm6"
+               target="_blank" rel="noopener noreferrer">
+               Open location in Google Maps →
+            </a>
+        </p>
+
+        <hr>
+
+        <!-- Flag Counter (RIGHT BELOW CONTENT) -->
+        <div class="flag-counter">
+            <a href="https://info.flagcounter.com/REtt" target="_blank">
+                <img src="https://s01.flagcounter.com/count2/REtt/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+                     alt="Flag Counter" border="0">
+            </a>
+        </div>
+
+        <p class="small">
+  Last updated: <span id="last-updated"></span>
+</p>
+
+<script>
+  document.getElementById("last-updated").textContent =
+    new Date(document.lastModified).toLocaleDateString();
+</script>
+
+    </div>
 </div>
-
 </body>
 </html>
-```
